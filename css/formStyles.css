@@ -1,0 +1,93 @@
+body{
+    background-attachment: fixed;
+    font-family: 'Microsoft YaHei UI Light';
+}
+    .campos{
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    .Titulo{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    header{
+        background-color:rgba(5, 71, 172,0.2);
+        text-align: center;
+        position: fixed;
+        top:0%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100px;
+    }
+
+    main{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        width: 50%;
+        border-radius: 20px;
+    }
+
+        main #PQRS{
+            background-color: rgba(236, 252, 8, 0.705);
+            padding: 20px;
+            z-index: 1;
+            width: 80%;
+        }
+
+        main select,input{
+            font-size: 16px;
+            font-family: 'Crimson Text', serif;
+            width: 80%;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+
+        main textarea{
+            margin-left: 1%;
+            width: 80%;
+        }
+
+        main input[type="submit"]{
+            width: 20%;
+            padding: 10px 0;
+            border-radius: 2px;
+            margin-left: 37%;
+        }
+
+    #PreguntasFrecuentes{
+        background-color: rgb(102, 91, 245);
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+        width: 60%;
+        position: fixed;
+        top: 80%;
+        transition: all .3s ease-in-out;
+        left: 17%;
+
+        
+    }
+        
+    #PreguntasFrecuentes:hover, #imgBoton{
+        top:20%;
+        transition: all .6s ease-in-out;
+        z-index: 2;
+    }
+        #PreguntasFrecuentes #preguntaFrecuente{
+            border-bottom: 1px solid black;
+        }
+
+        #PreguntasFrecuentes #Preguntas #BotonFormulario #imgBoton{
+            transform: rotate(180deg);
+            transition: all .6s ease-in-out;
+        }
+
+        #PreguntasFrecuentes:hover #Preguntas #BotonFormulario #imgBoton{
+            transform: rotate(0deg);
+            transition: all .6s ease-in-out;
+        }
