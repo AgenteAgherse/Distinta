@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(0, 5, 75);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    width: 20%;
+}
+    header #LogoDistinta{
+        margin-top: 10%;
+        margin-left: 30%;
+    }
+    
+    header #Informacion{
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+
+        header #Informacion #elementoInfo{
+            margin-top: 10%;
+            list-style-type: none;
+        }
+
+            header #Informacion #elementoInfo a{
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+            }
+        
+        header #Redes #Informacion{
+            display: inline-flex;
+        }
