@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/PQRS.css">
+</head>
+<body>
+    <header>
+        <div id="LogoEmpresa">
+            <a href="index.html"><img class="LogoDistinta" id="LogoDistinta" src="icons/LogoDistinta.png" alt="Imagen Distinta"></a>
+        </div>
+        <div id="Listado">
+            <ul id="Informacion">
+                <li id="elementoInfo"><a href="index.html#Inicio">Inicio</a></li>
+                <li id="elementoInfo"><a href="index.html#Nosotros">Nosotros</a></li>
+                <li id="elementoInfo"><a href="index.html#Productos">Productos</a></li>
+                <li id="elementoInfo"><a href="index.html#Ubicacion">Ubicación</a></li>
+                <li id="elementoInfo"><a href="formulario.html">PQRS &RightArrow;</a></li>
+                <li id="elementoInfo"><a href="#">Cotiza &RightArrow;</a></li>
+            </ul>
+        </div>
+        <div id="Redes">
+            <ul id="Informacion">
+                <li id="elementoInfo"><a href="#"><img src="icons/Facebook_40px.png" alt="Facebook"></a></li>
+                <li id="elementoInfo"><a href="#"><img src="icons/Instagram_40px.png" alt="Instagram"></a></li>
+                <li id="elementoInfo"><a href="#"><img src="icons/tiktok_40px.png" alt="TikTok"></a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>Cotiza Tu Servicio</h1>
+    <main>
+        <form action="#" method="post">
+            <div id="campoCotizacion">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre Y Apellidos">
+            </div>
+            <div id="campoCotizacion">
+                <label for="servicio">Servcio: </label>
+                <ul id="servicios">
+                    <li><input type="checkbox" name="servicio" value="Vinilo">Vinilo</li>
+                    <li><input type="checkbox" name="servicio" value="Microperforado">Microperforado</li>
+                    <li><input type="checkbox" name="servicio" value="Banner">Banner</li>
+                    <li><input type="checkbox" name="servicio" value="Acrílico">Acrílico</li>
+                </ul>
+            </div>
+            <div id="campoCotizacion">
+                <p>Precios</p>
+                <ul id="precios">
+                    <li>Vinilo: 35.000 COP</li>
+                    <li>Microperforado: 150.000 COP</li>
+                    <li>Banner: 30.000 COP</li>
+                    <li>Acrílico: 200.000 COP</li>
+                </ul>
+            </div>
+            <div id="campoCotizacion">
+                <label for="fechaEntrega">Elige tu fecha de entrega</label>
+                <input type="date">
+            </div>
+            <input type="submit" value="Cotizar">
+            <h2 style="margin: 5% 25%;">VALOR TOTAL: 0</h2>
+        </form>
+    </main>
+</body>
+</html>
