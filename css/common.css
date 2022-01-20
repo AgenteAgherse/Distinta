@@ -1,6 +1,15 @@
+
+
 body{
-    font-family: 'Microsoft YaHei UI Light';
+    font-family: 'Microsoft YaHei UI Light', serif;
     font-weight: 900;
+}
+
+.LogoDistinta{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 10%;
 }
 
 header{
@@ -10,36 +19,38 @@ header{
     bottom: 0%;
     left: 0%;
     width: 20%;
-    z-index: 2;
+    z-index: 1;
+    overflow: hidden;
 }
+
+
 header #LogoDistinta{
     margin-top: 10%;
     margin-left: 30%;
 }
 
-    header #Informacion{
-        margin-top: 20%;
-        margin-left: 10%;
-    }
-
-        header #Informacion #elementoInfo{
+        header #Listado #Informacion #elementoInfo{
             margin-top: 10%;
             list-style-type: none;
         }
 
-            header #Informacion #elementoInfo a{
+            header #Listado #Informacion #elementoInfo a{
                 color: white;
-                font-size: 100%;
                 text-decoration: none;
+                font-stretch: semi-condensed;
             }
     
-    header #Redes #Informacion{
+    /*Sección de redes sociales*/
+    header #Redes{
         display: inline-flex;
+        margin-top: 20%;
+        width: 100%;
+        height: 5%;
+        place-content: center;
     }
     
-.LogoDistinta{
-    width: 40%;
-    height: 100%;
-    border-radius: 50%;
-    margin-left: 10%;
-}
+        header #Redes img{            
+            width: 100%;
+            height: 100%;
+        }
+
