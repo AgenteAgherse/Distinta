@@ -1,5 +1,9 @@
 var main = 'https://61e827b3e32cd90017acc0cf.mockapi.io/api/v1';
 var servicios = [];
+
+/*
+    SECCIÓN DE BÚSQUEDA
+*/
 search = async function(){
     try {
         let campos = document.getElementById('campo');
@@ -146,5 +150,30 @@ modificar = async function(){
         cambios.parentNode.removeChild(cambios);
         document.getElementById('modGuia').value = "";
     }
+}
+
+eliminar = async function(){
+    let id = document.getElementById('elGuia').value;
+    console.log(id);
+    const decision = confirm('¿Seguro desea eliminar a la persona?');
+    if(decision){
+            const response = await fetch(main + '/Costumers/' + id, {
+                method: 'DELETE',
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            });
+            if(response.status == 201 || response.status == 200){
+                alert('Guía eliminada');
+                document.getElementById('elGuia').value = "";
+            }
+            else if(response.status == 404){
+                alert('Persona no encontrada en la base');
+            }
+            return response.json();
+    }
+    
+
+    
 }
 
